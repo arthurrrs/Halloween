@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escultura de Abóboras de Halloween</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Esculpir sua Abóbora Virtual</h1>
+    <div id="container">
+        <div id="pumpkin-canvas">
+            <canvas id="canvas" width="300" height="300"></canvas>
+        </div>
+        <div id="controls">
+            <h2>Escolha os Elementos</h2>
+            <div class="options">
+                <button onclick="addFeature('eyes')">Olhos</button>
+                <button onclick="addFeature('mouth')">Boca</button>
+                <button onclick="addFeature('nose')">Nariz</button>
+            </div>
+            <h2>Efeitos Especiais</h2>
+            <div class="options">
+                <button onclick="applyEffect('glow')">Brilho</button>
+                <button onclick="applyEffect('shadow')">Sombra</button>
+            </div>
+            <button onclick="saveImage()">Salvar Abóbora</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
